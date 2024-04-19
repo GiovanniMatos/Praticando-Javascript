@@ -20,15 +20,15 @@
     <button class="btn btn-primary" onclick="changeColorDiv()">Mudar Cor</button>
     <div class="cor" id="cor"><b>teste</b></div><hr><br>
 
-    <h1>Alert com dados do formulário</h1><br>
-    <form method="post"> 
-        <label><b>Nome</b></label>
-        <input type="text" name="nome"><br>
-        <label><b>Email</b></label>
-        <input type="email" name="email"><br>
-        <input type="submit" name="enviar">
-    </form>
-
+    <h1>Formulário</h1><br>
+    <form>
+        <label class="form-label"><b>Nome</b></label>
+        <input type="text" name="nome" id="nome"><br>
+        <label class="form-label"><b>Email</b></label>
+        <input type="email" name="email" id="email"><br>
+    </form>    
+    <button id="btnDOM" onclick="changeDOM()">ENVIAR</button>
+    <p id="pForm"></p>
     <script src="script.js"></script>
 </body>
 </html>

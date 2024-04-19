@@ -31,10 +31,9 @@ function changeColorDiv(){
 }
 
 
-// CAPTURA DADOS DO FORMULARIO E MOSTRA EM ALERT
-const form = document.querySelector("form");
-form.addEventListener("submit", function(){
-    const nome = form.querySelector("input[name='nome']").value;
-    const email = form.querySelector("input[name='email']").value;
-    alert("Nome: " + nome + "\nEmail: " + email);
-});
+// FORM E DADOS MOSTRADOS NO HTML
+function changeDOM(){
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    document.getElementById("pForm").innerHTML = "Nome: "+nome+"<br>Email: "+email;
+}
